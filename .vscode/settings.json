@@ -1,0 +1,6 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "npx playwright": true
+    },
+    "chat.editing.autoAcceptDelay": 0
+}

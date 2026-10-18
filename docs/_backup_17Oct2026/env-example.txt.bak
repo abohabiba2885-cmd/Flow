@@ -1,0 +1,25 @@
+# Copy to .env and fill in. Never commit the real .env.
+BASE_URL=https://frontend.aws-stage.flowsky.co
+
+# Authentication: use ONE of the two options.
+# Option 1 - credential login in fixtures/global-setup.ts (writes .auth/user.json).
+# Maker user with permission to create and edit loan product configuration (placeholders only)
+FLOWSKY_EMAIL=your.maker.user@example.com
+FLOWSKY_PASSWORD=change-me
+# Option 2 - a session recorded with: npx playwright codegen --save-storage=.auth/user.json <BASE_URL>/login
+# When set, the credential login is skipped.
+PLAYWRIGHT_STORAGE_STATE=
+
+# Optional: a second user WITHOUT loan-product edit permission (authorization tests)
+FLOWSKY_RESTRICTED_EMAIL=
+FLOWSKY_RESTRICTED_PASSWORD=
+
+# Controlled, QA-owned loan product used by Edit tests (numeric id from /loan-product-config/edit/{id}).
+# Use a dedicated record - Edit tests change it. Do not point this at a production-like or shared product.
+EDIT_PRODUCT_ID=
+
+# Prefix for products created by Add tests (helps cleanup and search)
+TEST_PRODUCT_PREFIX=QA-LPC
+
+# Legacy alias for BASE_URL used by the step suites migrated from Flow. Leave empty unless needed.
+LOAN_PRODUCT_APP_URL=

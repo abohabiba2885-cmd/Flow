@@ -1,0 +1,251 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\Projects\\Flow\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--list",
+      "--project=lpc-chromium",
+      "--grep",
+      "FLOW-LPC-EDIT-S05-002|FLOW-LPC-EDIT-S10-001"
+    ],
+    "configFile": "D:\\Projects\\Flow\\playwright.config.ts",
+    "rootDir": "D:/Projects/Flow/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "D:\\Projects\\Flow\\fixtures\\global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/Projects/Flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "lpc-chromium",
+        "name": "lpc-chromium",
+        "testDir": "D:/Projects/Flow/tests/ui/loan-product-configuration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "D:/Projects/Flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Projects/Flow/tests/ui/loan-product-configuration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Projects/Flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Projects/Flow/tests/ui/loan-product-configuration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/Projects/Flow/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Projects/Flow/tests/ui/loan-product-configuration",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "D:\\Projects\\Flow\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "name": "lpc-chromium",
+        "testDir": "D:\\Projects\\Flow\\tests\\ui\\loan-product-configuration",
+        "snapshotDir": "D:\\Projects\\Flow\\tests\\ui\\loan-product-configuration",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.ts",
+        "timeout": 90000,
+        "use": {
+          "baseURL": "https://frontend.aws-stage.flowsky.co",
+          "storageState": "D:\\Projects\\Flow\\.auth\\user.json",
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "viewport": {
+            "width": 1920,
+            "height": 1080
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium",
+          "actionTimeout": 15000,
+          "navigationTimeout": 30000
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "lpc-chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "./reports/loan-product-configuration/execution/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./reports/loan-product-configuration/execution/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ui\\loan-product-configuration\\05-Associated-Workflow\\edit\\FLOW-LPC-EDIT-S05-002-save-continue-stays-disabled-until-a-workflow-is-selected.spec.ts",
+      "file": "ui/loan-product-configuration/05-Associated-Workflow/edit/FLOW-LPC-EDIT-S05-002-save-continue-stays-disabled-until-a-workflow-is-selected.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FLOW-LPC-EDIT-S05-002",
+          "file": "ui/loan-product-configuration/05-Associated-Workflow/edit/FLOW-LPC-EDIT-S05-002-save-continue-stays-disabled-until-a-workflow-is-selected.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FLOW-LPC-EDIT-S05-002 Save & Continue stays disabled until a workflow is selected @edit @step-05 @high @new",
+              "ok": true,
+              "tags": [
+                "edit",
+                "step-05",
+                "high",
+                "new"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "lpc-chromium",
+                  "projectName": "lpc-chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c1e40478eabaa110002d-b2bf5cfad79583ee89de",
+              "file": "ui/loan-product-configuration/05-Associated-Workflow/edit/FLOW-LPC-EDIT-S05-002-save-continue-stays-disabled-until-a-workflow-is-selected.spec.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\loan-product-configuration\\07-Merchants\\edit\\FLOW-LPC-EDIT-S10-001-list-shows-the-update-with-workflows-counter-pending-review.spec.ts",
+      "file": "ui/loan-product-configuration/07-Merchants/edit/FLOW-LPC-EDIT-S10-001-list-shows-the-update-with-workflows-counter-pending-review.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FLOW-LPC-EDIT-S10-001",
+          "file": "ui/loan-product-configuration/07-Merchants/edit/FLOW-LPC-EDIT-S10-001-list-shows-the-update-with-workflows-counter-pending-review.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FLOW-LPC-EDIT-S10-001 List shows the update: 'With Workflows' counter, PENDING REVIEW and Last Activity @edit @step-10 @medium @new",
+              "ok": true,
+              "tags": [
+                "edit",
+                "step-10",
+                "medium",
+                "new"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "lpc-chromium",
+                  "projectName": "lpc-chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "f65ebe4da03ff9b779be-f8a4ee833424514d89eb",
+              "file": "ui/loan-product-configuration/07-Merchants/edit/FLOW-LPC-EDIT-S10-001-list-shows-the-update-with-workflows-counter-pending-review.spec.ts",
+              "line": 25,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-17T20:01:16.449Z",
+    "duration": 4281.584000000001,
+    "expected": 0,
+    "skipped": 2,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

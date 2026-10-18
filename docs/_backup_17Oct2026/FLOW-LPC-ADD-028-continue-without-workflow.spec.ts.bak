@@ -1,0 +1,18 @@
+/**
+ * FLOW-LPC-ADD-028 | Continuing without selecting a workflow follows the mandatory rule
+ * Excel: test-cases/Flowsky_Loan_Product_Configuration_Jira_TestCases.xlsx -> sheet 'Add Loan Product Config'
+ * Workflow step: Step 05 - Associated Workflow
+ * Requirement: LPC-REQ-020 | Priority: Medium | Technique: Error guessing | Automation: Candidate
+ * Locators derived from the 16-Oct-2026 staging recording - verify on first run.
+ */
+import { test, expect } from '../../../../../fixtures';
+import { advanceAdd } from '../../../../../helpers/navigation/flow';
+
+test.describe('FLOW-LPC-ADD-028', () => {
+  test('FLOW-LPC-ADD-028 Continuing without selecting a workflow follows the mandatory rule @add @step-05 @medium', async ({ page, wizard }) => {
+  test.fixme(true, 'CANDIDATE: Workflow mandatory rule unknown (G-09).');
+    await advanceAdd(page, 'Associated Workflow');
+    await wizard.attemptContinue();
+    await wizard.expectOnStep('Associated Workflow');
+  });
+});

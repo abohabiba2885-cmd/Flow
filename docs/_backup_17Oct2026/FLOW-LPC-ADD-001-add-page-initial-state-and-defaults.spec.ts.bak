@@ -1,0 +1,24 @@
+/**
+ * FLOW-LPC-ADD-001 | Add page opens on Step 1 with 0% and documented defaults
+ * Excel: test-cases/Flowsky_Loan_Product_Configuration_Jira_TestCases.xlsx -> sheet 'Add Loan Product Config'
+ * Workflow step: Step 01 - General Information
+ * Requirement: LPC-REQ-001, LPC-REQ-002 | Priority: Critical | Technique: Use case | Automation: Automated
+ * Locators derived from the 16-Oct-2026 staging recording - verify on first run.
+ */
+import { test, expect } from '../../../../../fixtures';
+import { STEP_NAMES } from '../../../../../pages/loan-product-configuration/LoanProductWizardPage';
+
+test.describe('FLOW-LPC-ADD-001', () => {
+  test('FLOW-LPC-ADD-001 Add page opens on Step 1 with 0% and documented defaults @add @step-01 @smoke @critical', async ({ page, wizard, steps }) => {
+    await wizard.gotoAdd();
+    await expect(page.getByText('Add New Product').first()).toBeVisible();
+    await wizard.expectCompletion(0);
+    await wizard.expectStepStatus('General Information', 'In Progress');
+    for (const s of STEP_NAMES.slice(1)) await wizard.expectStepStatus(s, 'Pending');
+    await expect(steps.general.input('Product Name')).toHaveValue('');
+    await expect(steps.general.input('Product Code / ID')).toBeEditable();
+    await expect(steps.general.dropdown('Status')).toContainText('Active');
+    await expect(steps.general.dropdown('Fiscal Year')).toContainText('360 days');
+    await expect(steps.general.descriptionCounter).toContainText('0/1000 characters');
+  });
+});

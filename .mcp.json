@@ -1,0 +1,22 @@
+{
+    "mcpServers":  {
+                       "e2e":  {
+                                   "command":  "npx",
+                                   "args":  [
+                                                "e2e",
+                                                "mcp"
+                                            ]
+                               },
+                       "playwright-test":  {
+                                               "type":  "stdio",
+                                               "command":  "npx",
+                                               "args":  [
+                                                            "playwright",
+                                                            "run-test-mcp-server"
+                                                        ],
+                                               "tools":  [
+                                                             "*"
+                                                         ]
+                                           }
+                   }
+}

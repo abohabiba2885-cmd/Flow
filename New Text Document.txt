@@ -1,0 +1,90 @@
+Execution Summary — 16 Oct 2026
+
+Overall status: NOT RUN. No test case was executed against staging, so no test is reported as passed or failed.
+
+What was executed
+Check	Command	Result
+Dependency install	npm install (Playwright 1.56.1, TypeScript 5.9.3)	OK
+Type check	npx tsc --noEmit	Exit 0, no errors
+Test discovery	npx playwright test --list	72 tests in 72 files (Add 42, Edit 30)
+Smoke discovery	npx playwright test --list --grep @smoke	11 tests
+Execution attempt	npx playwright test --grep FLOW-LPC-ADD-001	Stopped in global setup: FLOWSKY_EMAIL and FLOWSKY_PASSWORD must be set … Tests are BLOCKED without an authenticated user.
+Staging reachability from the build workspace	curl https://frontend.aws-stage.flowsky.co/login	HTTP 000: host not reachable (proxy tunnel refused)
+Why tests were not run
+No credentials. Credentials must not be entered by the automation agent or hard-coded (gap G-02).
+No network route. The workspace has no route to staging (gap G-02).
+No Edit record. No controlled QA-owned product id was supplied for Edit (gap G-25). Product 563 from the video belongs to another user and was deliberately not used.
+Status per test case
+Planned status	Cases	Current execution status
+Automated	48	Not Run (environment blocked)
+Candidate (test.fixme)	12	Not Run (expectation pending a gap)
+Blocked (test.fixme)	9	Not Run (missing access or data)
+Manual	3	Not Run
+Defect candidates observed in the recording
+
+These come from the recording, not from test execution. Each must be confirmed by running the linked case.
+
+Gap	Observation	Case
+G-05	Add Step 1: Save & Continue enabled while the required Currency is empty	FLOW-LPC-ADD-003
+G-06	Financial Rules: Save & Continue enabled with an empty Interest Rate	FLOW-LPC-ADD-017, FLOW-LPC-EDIT-013
+G-07	Minimum Credit Score 0 accepted despite the "300-850" helper	FLOW-LPC-ADD-024
+G-08	Continue allowed with no decision engine and with required mappings empty	FLOW-LPC-ADD-031, ADD-033
+G-13	Typos: "steps steps", "Ballon", "Right Off", "principle"	FLOW-LPC-ADD-042
+G-14	Activity shows "Checker" after the maker's Update Product	FLOW-LPC-EDIT-018
+To execute
+Fill in playwright/.env with a QA maker account and EDIT_PRODUCT_ID.
+From a machine with staging access, run npm ci && npm run test:smoke, then npm test.
+Copy the statuses from results.json into the Excel workbook (or AIO Tests) by Test Case ID.
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+# Execution Summary — 16 Oct 2026
+
+**Overall status: NOT RUN.** No test case was executed against staging, so no test is reported as passed or failed.
+
+## What was executed
+
+| Check | Command | Result |
+|---|---|---|
+| Dependency install | `npm install` (Playwright 1.56.1, TypeScript 5.9.3) | OK |
+| Type check | `npx tsc --noEmit` | **Exit 0**, no errors |
+| Test discovery | `npx playwright test --list` | **72 tests in 72 files** (Add 42, Edit 30) |
+| Smoke discovery | `npx playwright test --list --grep @smoke` | 11 tests |
+| Execution attempt | `npx playwright test --grep FLOW-LPC-ADD-001` | **Stopped in global setup:** `FLOWSKY_EMAIL and FLOWSKY_PASSWORD must be set … Tests are BLOCKED without an authenticated user.` |
+| Staging reachability from the build workspace | `curl https://frontend.aws-stage.flowsky.co/login` | HTTP 000: host not reachable (proxy tunnel refused) |
+
+## Why tests were not run
+
+1. **No credentials.** Credentials must not be entered by the automation agent or hard-coded (gap G-02).
+2. **No network route.** The workspace has no route to staging (gap G-02).
+3. **No Edit record.** No controlled QA-owned product id was supplied for Edit (gap G-25). Product 563 from the video belongs to another user and was deliberately not used.
+
+## Status per test case
+
+| Planned status | Cases | Current execution status |
+|---|---|---|
+| Automated | 48 | Not Run (environment blocked) |
+| Candidate (`test.fixme`) | 12 | Not Run (expectation pending a gap) |
+| Blocked (`test.fixme`) | 9 | Not Run (missing access or data) |
+| Manual | 3 | Not Run |
+
+## Defect candidates observed in the recording
+
+These come from the recording, not from test execution. Each must be confirmed by running the linked case.
+
+| Gap | Observation | Case |
+|---|---|---|
+| G-05 | Add Step 1: Save & Continue enabled while the required Currency is empty | FLOW-LPC-ADD-003 |
+| G-06 | Financial Rules: Save & Continue enabled with an empty Interest Rate | FLOW-LPC-ADD-017, FLOW-LPC-EDIT-013 |
+| G-07 | Minimum Credit Score 0 accepted despite the "300-850" helper | FLOW-LPC-ADD-024 |
+| G-08 | Continue allowed with no decision engine and with required mappings empty | FLOW-LPC-ADD-031, ADD-033 |
+| G-13 | Typos: "steps steps", "Ballon", "Right Off", "principle" | FLOW-LPC-ADD-042 |
+| G-14 | Activity shows "Checker" after the maker's Update Product | FLOW-LPC-EDIT-018 |
+
+## To execute
+
+1. Fill in `playwright/.env` with a QA maker account and `EDIT_PRODUCT_ID`.
+2. From a machine with staging access, run `npm ci && npm run test:smoke`, then `npm test`.
+3. Copy the statuses from `results.json` into the Excel workbook (or AIO Tests) by Test Case ID.

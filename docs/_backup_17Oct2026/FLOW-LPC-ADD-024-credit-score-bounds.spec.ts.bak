@@ -1,0 +1,25 @@
+/**
+ * FLOW-LPC-ADD-024 | Minimum Credit Score enforces the 300-850 range
+ * Excel: test-cases/Flowsky_Loan_Product_Configuration_Jira_TestCases.xlsx -> sheet 'Add Loan Product Config'
+ * Workflow step: Step 04 - Eligibility Criteria
+ * Requirement: LPC-REQ-016 | Priority: High | Technique: Boundary value analysis | Automation: Candidate
+ * Locators derived from the 16-Oct-2026 staging recording - verify on first run.
+ */
+import { test, expect } from '../../../../../fixtures';
+import * as data from '../../../../../test-data/loan-product-configuration/baseline';
+import { advanceAdd } from '../../../../../helpers/navigation/flow';
+
+test.describe('FLOW-LPC-ADD-024', () => {
+  test('FLOW-LPC-ADD-024 Minimum Credit Score enforces the 300-850 range @add @step-04 @high', async ({ page, wizard, steps }) => {
+  test.fixme(true, 'CANDIDATE: Credit score bounds not confirmed; 0 accepted on staging (G-07).');
+    await advanceAdd(page, 'Eligibility Criteria');
+    for (const v of [0, 299, 851]) {
+      await steps.eligibility.fillAll({ ...data.eligibility, minCreditScore: v });
+      await wizard.attemptContinue();
+      await wizard.expectOnStep('Eligibility Criteria');
+    }
+    await steps.eligibility.fillAll({ ...data.eligibility, minCreditScore: 850 });
+    await wizard.saveAndContinue();
+    await wizard.expectOnStep('Associated Workflow');
+  });
+});

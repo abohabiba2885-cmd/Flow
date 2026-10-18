@@ -1,0 +1,22 @@
+node_modules/
+
+# Secrets and sessions
+.env
+.auth/
+
+# Generated output (keep folders)
+/test-results/
+/reports/*
+!/reports/.gitkeep
+!/reports/loan-product-configuration/
+/reports/loan-product-configuration/*
+!/reports/loan-product-configuration/coverage/
+!/reports/loan-product-configuration/improvement/
+!/reports/loan-product-configuration/execution/
+/reports/loan-product-configuration/execution/html-report/
+/reports/loan-product-configuration/execution/html-report/**
+/blob-report/
+/playwright/.cache/
+
+# Editor MCP config holds a plain-text Jira API token
+.vscode/mcp.json

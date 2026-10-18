@@ -1,0 +1,32 @@
+{
+  "name": "flowsky-qa-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FlowSky QA automation: Playwright (TypeScript) suites, Jira test case workbooks and traceability for Loan Product Configuration",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:list": "playwright test --list --reporter=list",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:lpc": "playwright test --project=lpc-chromium",
+    "test:add": "playwright test --project=lpc-chromium tests/ui/loan-product-configuration/add",
+    "test:edit": "playwright test --project=lpc-chromium tests/ui/loan-product-configuration/edit",
+    "test:step-suites": "playwright test --project=chromium",
+    "test:step-suites:all-browsers": "playwright test --project=chromium --project=firefox --project=webkit",
+    "test:general-product-setup": "playwright test --project=chromium tests/ui/loan-product-configuration/step-suites/general-product-setup",
+    "test:loan-structure": "playwright test --project=chromium tests/ui/loan-product-configuration/step-suites/loan-structure",
+    "test:financial-rules": "playwright test --project=chromium tests/ui/loan-product-configuration/step-suites/financial-rules",
+    "test:report": "playwright show-report reports/html-report",
+    "test:typecheck": "tsc --noEmit && tsc --noEmit -p scripts",
+    "validate": "node scripts/validate-project.ts",
+    "validate:links": "node scripts/validate-test-case-links.ts",
+    "summary": "node scripts/generate-test-summary.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "22.10.2",
+    "dotenv": "16.4.7",
+    "typescript": "5.9.3"
+  }
+}

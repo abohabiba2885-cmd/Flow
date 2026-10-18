@@ -1,0 +1,920 @@
+[
+        {
+                "id": "FS-TC-149",
+                "scenarioId": 149,
+                "title": "Attempt to input a product code that exceeds the maximum character limit (if any) and ensure that the system prevents this entry. - Copy",
+                "expectedResults": "A 21-character Product ID is truncated at the input limit.",
+                "status": "Automated",
+                "notes": "The inspected input exposes maxlength=20.",
+                "automationFile": "FS-TC-149_attempt-to-input-a-product-code-that-exceeds-the-maximum-character-limit.spec.ts"
+        },
+        {
+                "id": "FS-TC-315",
+                "scenarioId": 149,
+                "title": "Attempt to input a product code that exceeds the maximum character limit (if any) and ensure that the system prevents this entry. - Copy",
+                "expectedResults": "A 21-character Product ID is truncated at the input limit.",
+                "status": "Automated",
+                "notes": "The inspected input exposes maxlength=20.",
+                "automationFile": "FS-TC-315_attempt-to-input-a-product-code-that-exceeds-the-maximum-character-limit.spec.ts"
+        },
+        {
+                "id": "FS-TC-136",
+                "scenarioId": 136,
+                "title": "Attempt to submit the form with an empty product name and verify that an error message is displayed indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product Name leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Prevents progression; no error message appears until an action that could advance the wizard.",
+                "automationFile": "FS-TC-136_attempt-to-submit-the-form-with-an-empty-product-name-and-verify-that-an.spec.ts"
+        },
+        {
+                "id": "FS-TC-302",
+                "scenarioId": 136,
+                "title": "Attempt to submit the form with an empty product name and verify that an error message is displayed indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product Name leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Prevents progression; no error message appears until an action that could advance the wizard.",
+                "automationFile": "FS-TC-302_attempt-to-submit-the-form-with-an-empty-product-name-and-verify-that-an.spec.ts"
+        },
+        {
+                "id": "FS-TC-159",
+                "scenarioId": 159,
+                "title": "Check how the component behaves when the page is loaded with a preselected value different from \"Business Loan.\" - Copy",
+                "expectedResults": "Selected Product Type is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-159_check-how-the-component-behaves-when-the-page-is-loaded-with-a-preselect.spec.ts"
+        },
+        {
+                "id": "FS-TC-325",
+                "scenarioId": 159,
+                "title": "Check how the component behaves when the page is loaded with a preselected value different from \"Business Loan.\" - Copy",
+                "expectedResults": "Selected Product Type is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-325_check-how-the-component-behaves-when-the-page-is-loaded-with-a-preselect.spec.ts"
+        },
+        {
+                "id": "FS-TC-174",
+                "scenarioId": 174,
+                "title": "Check how the Status button behaves when the user quickly clicks multiple times in succession. - Copy",
+                "expectedResults": "Repeated Status clicks open and close the menu without an error.",
+                "status": "Partially Automated",
+                "notes": "AIO expected result is vague; test verifies the observable open/closed toggle.",
+                "automationFile": "FS-TC-174_check-how-the-status-button-behaves-when-the-user-quickly-clicks-multipl.spec.ts"
+        },
+        {
+                "id": "FS-TC-340",
+                "scenarioId": 174,
+                "title": "Check how the Status button behaves when the user quickly clicks multiple times in succession. - Copy",
+                "expectedResults": "Repeated Status clicks open and close the menu without an error.",
+                "status": "Partially Automated",
+                "notes": "AIO expected result is vague; test verifies the observable open/closed toggle.",
+                "automationFile": "FS-TC-340_check-how-the-status-button-behaves-when-the-user-quickly-clicks-multipl.spec.ts"
+        },
+        {
+                "id": "FS-TC-172",
+                "scenarioId": 172,
+                "title": "Check that clicking the Status button opens a dropdown menu with available status options. - Copy",
+                "expectedResults": "Status dropdown exposes all available options.",
+                "status": "Automated",
+                "notes": "The inspected staging form currently exposes Active and Inactive.",
+                "automationFile": "FS-TC-172_check-that-clicking-the-status-button-opens-a-dropdown-menu-with-availab.spec.ts"
+        },
+        {
+                "id": "FS-TC-338",
+                "scenarioId": 172,
+                "title": "Check that clicking the Status button opens a dropdown menu with available status options. - Copy",
+                "expectedResults": "Status dropdown exposes all available options.",
+                "status": "Automated",
+                "notes": "The inspected staging form currently exposes Active and Inactive.",
+                "automationFile": "FS-TC-338_check-that-clicking-the-status-button-opens-a-dropdown-menu-with-availab.spec.ts"
+        },
+        {
+                "id": "FS-TC-161",
+                "scenarioId": 161,
+                "title": "Check that clicking the target segment button opens the dropdown menu, allowing users to see available options. - Copy",
+                "expectedResults": "Target Segment dropdown opens and exposes available options.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-327",
+                "scenarioId": 161,
+                "title": "Check that clicking the target segment button opens the dropdown menu, allowing users to see available options. - Copy",
+                "expectedResults": "Target Segment dropdown opens and exposes available options.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-155",
+                "scenarioId": 155,
+                "title": "Check that the button is enabled and clickable when the component is in a normal state. - Copy",
+                "expectedResults": "Product Type control is enabled and opens.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-155_check-that-the-button-is-enabled-and-clickable-when-the-component-is-in.spec.ts"
+        },
+        {
+                "id": "FS-TC-321",
+                "scenarioId": 155,
+                "title": "Check that the button is enabled and clickable when the component is in a normal state. - Copy",
+                "expectedResults": "Product Type control is enabled and opens.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-321_check-that-the-button-is-enabled-and-clickable-when-the-component-is-in.spec.ts"
+        },
+        {
+                "id": "FS-TC-166",
+                "scenarioId": 166,
+                "title": "Check that the dropdown displays the correct currency options when expanded. - Copy",
+                "expectedResults": "Currency dropdown shows all available currencies.",
+                "status": "Automated",
+                "notes": "The inspected staging form currently exposes EGP, USD, and EUR.",
+                "automationFile": "FS-TC-166_check-that-the-dropdown-displays-the-correct-currency-options-when-expan.spec.ts"
+        },
+        {
+                "id": "FS-TC-332",
+                "scenarioId": 166,
+                "title": "Check that the dropdown displays the correct currency options when expanded. - Copy",
+                "expectedResults": "Currency dropdown shows all available currencies.",
+                "status": "Automated",
+                "notes": "The inspected staging form currently exposes EGP, USD, and EUR.",
+                "automationFile": "FS-TC-332_check-that-the-dropdown-displays-the-correct-currency-options-when-expan.spec.ts"
+        },
+        {
+                "id": "FS-TC-143",
+                "scenarioId": 143,
+                "title": "Check that the placeholder text \"e.g., MF001, GL001\" is visible when the input Product ID field is empty. - Copy",
+                "expectedResults": "Product ID placeholder is e.g., MF-001, GL-001.",
+                "status": "Automated",
+                "notes": "PO decision 16-Oct-2026: correct placeholder is \"e.g., MF-001, GL-001\"; the AIO title text (MF001, GL001) is outdated.",
+                "automationFile": "FS-TC-143_check-that-the-placeholder-text-e-g-mf001-gl001-is-visible-when-the-inpu.spec.ts"
+        },
+        {
+                "id": "FS-TC-309",
+                "scenarioId": 143,
+                "title": "Check that the placeholder text \"e.g., MF001, GL001\" is visible when the input Product ID field is empty. - Copy",
+                "expectedResults": "Product ID placeholder is e.g., MF-001, GL-001.",
+                "status": "Automated",
+                "notes": "PO decision 16-Oct-2026: correct placeholder is \"e.g., MF-001, GL-001\"; the AIO title text (MF001, GL001) is outdated.",
+                "automationFile": "FS-TC-309_check-that-the-placeholder-text-e-g-mf001-gl001-is-visible-when-the-inpu.spec.ts"
+        },
+        {
+                "id": "FS-TC-132",
+                "scenarioId": 132,
+                "title": "Check that the placeholder text \"e.g., Micro Business Loan, Group Lending Product\" is displayed correctly when the product name input field is empty. - Copy",
+                "expectedResults": "The Product Name placeholder matches the AIO expected text.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-132_check-that-the-placeholder-text-e-g-micro-business-loan-group-lending-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-298",
+                "scenarioId": 132,
+                "title": "Check that the placeholder text \"e.g., Micro Business Loan, Group Lending Product\" is displayed correctly when the product name input field is empty. - Copy",
+                "expectedResults": "The Product Name placeholder matches the AIO expected text.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-298_check-that-the-placeholder-text-e-g-micro-business-loan-group-lending-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-176",
+                "scenarioId": 176,
+                "title": "Check that the placeholder text \"Enter detailed product description\" is displayed correctly when the Product Description field text area is empty. - Copy",
+                "expectedResults": "Product Description placeholder matches the AIO expected text.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-176_check-that-the-placeholder-text-enter-detailed-product-description-is-di.spec.ts"
+        },
+        {
+                "id": "FS-TC-342",
+                "scenarioId": 176,
+                "title": "Check that the placeholder text \"Enter detailed product description\" is displayed correctly when the Product Description field text area is empty. - Copy",
+                "expectedResults": "Product Description placeholder matches the AIO expected text.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-342_check-that-the-placeholder-text-enter-detailed-product-description-is-di.spec.ts"
+        },
+        {
+                "id": "FS-TC-163",
+                "scenarioId": 163,
+                "title": "Check the target segment behavior when the button is clicked rapidly multiple times and ensure that it does not lead to unexpected behavior or errors. - Copy",
+                "expectedResults": "Repeated Target Segment clicks open and close the menu without an error.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-329",
+                "scenarioId": 163,
+                "title": "Check the target segment behavior when the button is clicked rapidly multiple times and ensure that it does not lead to unexpected behavior or errors. - Copy",
+                "expectedResults": "Repeated Target Segment clicks open and close the menu without an error.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-177",
+                "scenarioId": 177,
+                "title": "Confirm that the Product Description field text area maintains the entered text after a page refresh. - Copy",
+                "expectedResults": "Description text is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-177_confirm-that-the-product-description-field-text-area-maintains-the-enter.spec.ts"
+        },
+        {
+                "id": "FS-TC-343",
+                "scenarioId": 177,
+                "title": "Confirm that the Product Description field text area maintains the entered text after a page refresh. - Copy",
+                "expectedResults": "Description text is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-343_confirm-that-the-product-description-field-text-area-maintains-the-enter.spec.ts"
+        },
+        {
+                "id": "FS-TC-146",
+                "scenarioId": 146,
+                "title": "Confirm that the Product ID input field can accept a variety of valid product codes, including alphanumeric combinations and special characters (if applicable). - Copy",
+                "expectedResults": "Documented hyphenated alphanumeric Product IDs are accepted.",
+                "status": "Automated",
+                "notes": "Uses the examples shown by the inspected application.",
+                "automationFile": "FS-TC-146_confirm-that-the-product-id-input-field-can-accept-a-variety-of-valid-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-312",
+                "scenarioId": 146,
+                "title": "Confirm that the Product ID input field can accept a variety of valid product codes, including alphanumeric combinations and special characters (if applicable). - Copy",
+                "expectedResults": "Documented hyphenated alphanumeric Product IDs are accepted.",
+                "status": "Automated",
+                "notes": "Uses the examples shown by the inspected application.",
+                "automationFile": "FS-TC-312_confirm-that-the-product-id-input-field-can-accept-a-variety-of-valid-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-135",
+                "scenarioId": 135,
+                "title": "Confirm that the product name input field allows a maximum character limit, if applicable, and that it displays an appropriate message when the limit is reached. - Copy",
+                "expectedResults": "A 201-character Product Name is rejected or exposes field validation.",
+                "status": "Partially Automated",
+                "notes": "AIO says the limit is conditional; the inspected input has no maxlength, and the validation trigger/message is unspecified.",
+                "automationFile": "FS-TC-135_confirm-that-the-product-name-input-field-allows-a-maximum-character-lim.spec.ts"
+        },
+        {
+                "id": "FS-TC-301",
+                "scenarioId": 135,
+                "title": "Confirm that the product name input field allows a maximum character limit, if applicable, and that it displays an appropriate message when the limit is reached. - Copy",
+                "expectedResults": "A 201-character Product Name is rejected or exposes field validation.",
+                "status": "Partially Automated",
+                "notes": "AIO says the limit is conditional; the inspected input has no maxlength, and the validation trigger/message is unspecified.",
+                "automationFile": "FS-TC-301_confirm-that-the-product-name-input-field-allows-a-maximum-character-lim.spec.ts"
+        },
+        {
+                "id": "FS-TC-144",
+                "scenarioId": 144,
+                "title": "Ensure that the asterisk (*) next to the label is displayed in red, indicating that the Product ID field is required. - Copy",
+                "expectedResults": "The Product ID required asterisk is visible and red.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-144_ensure-that-the-asterisk-next-to-the-label-is-displayed-in-red-indicatin.spec.ts"
+        },
+        {
+                "id": "FS-TC-310",
+                "scenarioId": 144,
+                "title": "Ensure that the asterisk (*) next to the label is displayed in red, indicating that the Product ID field is required. - Copy",
+                "expectedResults": "The Product ID required asterisk is visible and red.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-310_ensure-that-the-asterisk-next-to-the-label-is-displayed-in-red-indicatin.spec.ts"
+        },
+        {
+                "id": "FS-TC-157",
+                "scenarioId": 157,
+                "title": "Ensure that the default selected value \"Business Loan\" is displayed correctly in the button. - Copy",
+                "expectedResults": "Product Type has no default: it shows the placeholder \"Select a product type\".",
+                "status": "Automated",
+                "notes": "PO decision 16-Oct-2026: Product Type stays empty by default; the AIO title text (Business Loan default) is outdated.",
+                "automationFile": "FS-TC-157_ensure-that-the-default-selected-value-business-loan-is-displayed-correc.spec.ts"
+        },
+        {
+                "id": "FS-TC-323",
+                "scenarioId": 157,
+                "title": "Ensure that the default selected value \"Business Loan\" is displayed correctly in the button. - Copy",
+                "expectedResults": "Product Type has no default: it shows the placeholder \"Select a product type\".",
+                "status": "Automated",
+                "notes": "PO decision 16-Oct-2026: Product Type stays empty by default; the AIO title text (Business Loan default) is outdated.",
+                "automationFile": "FS-TC-323_ensure-that-the-default-selected-value-business-loan-is-displayed-correc.spec.ts"
+        },
+        {
+                "id": "FS-TC-133",
+                "scenarioId": 133,
+                "title": "Ensure that the required indicator (the red asterisk) is visible next to the \"Product Name\" label when the product name field is mandatory - Copy",
+                "expectedResults": "The Product Name required asterisk is visible and red.",
+                "status": "Automated",
+                "notes": "Copy case FS-TC-299 additionally checks that the next step remains disabled when the name is blank.",
+                "automationFile": "FS-TC-133_ensure-that-the-required-indicator-the-red-asterisk-is-visible-next-to-t.spec.ts"
+        },
+        {
+                "id": "FS-TC-299",
+                "scenarioId": 133,
+                "title": "Ensure that the required indicator (the red asterisk) is visible next to the \"Product Name\" label when the product name field is mandatory - Copy",
+                "expectedResults": "The Product Name required asterisk is visible and red.",
+                "status": "Automated",
+                "notes": "Copy case FS-TC-299 additionally checks that the next step remains disabled when the name is blank.",
+                "automationFile": "FS-TC-299_ensure-that-the-required-indicator-the-red-asterisk-is-visible-next-to-t.spec.ts"
+        },
+        {
+                "id": "FS-TC-167",
+                "scenarioId": 167,
+                "title": "Ensure that the selected currency is displayed correctly in the dropdown as selected after selection. - Copy",
+                "expectedResults": "The selected currency is displayed in the Currency control.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-167_ensure-that-the-selected-currency-is-displayed-correctly-in-the-dropdown.spec.ts"
+        },
+        {
+                "id": "FS-TC-333",
+                "scenarioId": 167,
+                "title": "Ensure that the selected currency is displayed correctly in the dropdown as selected after selection. - Copy",
+                "expectedResults": "The selected currency is displayed in the Currency control.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-333_ensure-that-the-selected-currency-is-displayed-correctly-in-the-dropdown.spec.ts"
+        },
+        {
+                "id": "FS-TC-137",
+                "scenarioId": 137,
+                "title": "Enter invalid characters (e.g., special characters or emojis) in the product name and ensure that the system displays an error or prevents submission. - Copy",
+                "expectedResults": "Special characters and emoji in Product Name produce validation or block progression.",
+                "status": "Automated",
+                "notes": "Validation on blur was not observed in the staging form; the source expectation assertion is retained.",
+                "automationFile": "FS-TC-137_enter-invalid-characters-e-g-special-characters-or-emojis-in-the-product.spec.ts"
+        },
+        {
+                "id": "FS-TC-303",
+                "scenarioId": 137,
+                "title": "Enter invalid characters (e.g., special characters or emojis) in the product name and ensure that the system displays an error or prevents submission. - Copy",
+                "expectedResults": "Special characters and emoji in Product Name produce validation or block progression.",
+                "status": "Automated",
+                "notes": "Validation on blur was not observed in the staging form; the source expectation assertion is retained.",
+                "automationFile": "FS-TC-303_enter-invalid-characters-e-g-special-characters-or-emojis-in-the-product.spec.ts"
+        },
+        {
+                "id": "FS-TC-148",
+                "scenarioId": 148,
+                "title": "Enter invalid product codes such as \"12345\" or \"INVALID\" in the Product ID field and check if the system rejects them with an error message. - Copy",
+                "expectedResults": "An invalid Product ID exposes validation or blocks progression.",
+                "status": "Automated",
+                "notes": "The inspected form accepts arbitrary characters on blur; assertion preserves the AIO rejection expectation.",
+                "automationFile": "FS-TC-148_enter-invalid-product-codes-such-as-12345-or-invalid-in-the-product-id-f.spec.ts"
+        },
+        {
+                "id": "FS-TC-314",
+                "scenarioId": 148,
+                "title": "Enter invalid product codes such as \"12345\" or \"INVALID\" in the Product ID field and check if the system rejects them with an error message. - Copy",
+                "expectedResults": "An invalid Product ID exposes validation or blocks progression.",
+                "status": "Automated",
+                "notes": "The inspected form accepts arbitrary characters on blur; assertion preserves the AIO rejection expectation.",
+                "automationFile": "FS-TC-314_enter-invalid-product-codes-such-as-12345-or-invalid-in-the-product-id-f.spec.ts"
+        },
+        {
+                "id": "FS-TC-170",
+                "scenarioId": 170,
+                "title": "Explore the scenario where the user scrolls through a long list of currencies and verify that the Currency dropdown supports smooth scrolling and easy navigation. - Copy",
+                "expectedResults": "Currency options remain reachable while scrolling the dropdown.",
+                "status": "Partially Automated",
+                "notes": "The inspected form has only three currency options, not the long list described by AIO.",
+                "automationFile": "FS-TC-170_explore-the-scenario-where-the-user-scrolls-through-a-long-list-of-curre.spec.ts"
+        },
+        {
+                "id": "FS-TC-336",
+                "scenarioId": 170,
+                "title": "Explore the scenario where the user scrolls through a long list of currencies and verify that the Currency dropdown supports smooth scrolling and easy navigation. - Copy",
+                "expectedResults": "Currency options remain reachable while scrolling the dropdown.",
+                "status": "Partially Automated",
+                "notes": "The inspected form has only three currency options, not the long list described by AIO.",
+                "automationFile": "FS-TC-336_explore-the-scenario-where-the-user-scrolls-through-a-long-list-of-curre.spec.ts"
+        },
+        {
+                "id": "FS-TC-180",
+                "scenarioId": 180,
+                "title": "Simulate a scenario where the user pastes a large block of text into the Product Description field text area to check for performance issues or formatting errors. - Copy",
+                "expectedResults": "Large clipboard paste is limited to 1,000 characters and updates the counter.",
+                "status": "Automated",
+                "notes": "Clipboard interaction is exercised in Chromium.",
+                "automationFile": "FS-TC-180_simulate-a-scenario-where-the-user-pastes-a-large-block-of-text-into-the.spec.ts"
+        },
+        {
+                "id": "FS-TC-346",
+                "scenarioId": 180,
+                "title": "Simulate a scenario where the user pastes a large block of text into the Product Description field text area to check for performance issues or formatting errors. - Copy",
+                "expectedResults": "Large clipboard paste is limited to 1,000 characters and updates the counter.",
+                "status": "Automated",
+                "notes": "Clipboard interaction is exercised in Chromium.",
+                "automationFile": "FS-TC-346_simulate-a-scenario-where-the-user-pastes-a-large-block-of-text-into-the.spec.ts"
+        },
+        {
+                "id": "FS-TC-139",
+                "scenarioId": 139,
+                "title": "Simulate a user who uses keyboard shortcuts (like Ctrl+V) to paste a product name and check if the input field correctly reflects the pasted name. - Copy",
+                "expectedResults": "Ctrl+V pastes the copied product name into Product Name.",
+                "status": "Automated",
+                "notes": "Clipboard interaction is exercised in Chromium.",
+                "automationFile": "FS-TC-139_simulate-a-user-who-uses-keyboard-shortcuts-like-ctrl-v-to-paste-a-produ.spec.ts"
+        },
+        {
+                "id": "FS-TC-305",
+                "scenarioId": 139,
+                "title": "Simulate a user who uses keyboard shortcuts (like Ctrl+V) to paste a product name and check if the input field correctly reflects the pasted name. - Copy",
+                "expectedResults": "Ctrl+V pastes the copied product name into Product Name.",
+                "status": "Automated",
+                "notes": "Clipboard interaction is exercised in Chromium.",
+                "automationFile": "FS-TC-305_simulate-a-user-who-uses-keyboard-shortcuts-like-ctrl-v-to-paste-a-produ.spec.ts"
+        },
+        {
+                "id": "FS-TC-168",
+                "scenarioId": 168,
+                "title": "Test that the Currency dropdown can be closed by clicking outside of it or pressing the Escape key. - Copy",
+                "expectedResults": "Currency dropdown closes on Escape or outside click.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-168_test-that-the-currency-dropdown-can-be-closed-by-clicking-outside-of-it.spec.ts"
+        },
+        {
+                "id": "FS-TC-334",
+                "scenarioId": 168,
+                "title": "Test that the Currency dropdown can be closed by clicking outside of it or pressing the Escape key. - Copy",
+                "expectedResults": "Currency dropdown closes on Escape or outside click.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-334_test-that-the-currency-dropdown-can-be-closed-by-clicking-outside-of-it.spec.ts"
+        },
+        {
+                "id": "FS-TC-158",
+                "scenarioId": 158,
+                "title": "Test that the dropdown menu contains multiple product type options when opened. - Copy",
+                "expectedResults": "The Product Type dropdown contains all observed options.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-158_test-that-the-dropdown-menu-contains-multiple-product-type-options-when.spec.ts"
+        },
+        {
+                "id": "FS-TC-324",
+                "scenarioId": 158,
+                "title": "Test that the dropdown menu contains multiple product type options when opened. - Copy",
+                "expectedResults": "The Product Type dropdown contains all observed options.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-324_test-that-the-dropdown-menu-contains-multiple-product-type-options-when.spec.ts"
+        },
+        {
+                "id": "FS-TC-181",
+                "scenarioId": 181,
+                "title": "Test the behavior of the Product Description field text area when the user switches between different input languages or keyboard layouts, ensuring that the placeholder text and input still function correctly. - Copy",
+                "expectedResults": "English, Arabic, emoji, and special characters remain intact in description.",
+                "status": "Partially Automated",
+                "notes": "Unicode input is asserted; switching the operating-system keyboard layout is not automated.",
+                "automationFile": "FS-TC-181_test-the-behavior-of-the-product-description-field-text-area-when-the-us.spec.ts"
+        },
+        {
+                "id": "FS-TC-347",
+                "scenarioId": 181,
+                "title": "Test the behavior of the Product Description field text area when the user switches between different input languages or keyboard layouts, ensuring that the placeholder text and input still function correctly. - Copy",
+                "expectedResults": "English, Arabic, emoji, and special characters remain intact in description.",
+                "status": "Partially Automated",
+                "notes": "Unicode input is asserted; switching the operating-system keyboard layout is not automated.",
+                "automationFile": "FS-TC-347_test-the-behavior-of-the-product-description-field-text-area-when-the-us.spec.ts"
+        },
+        {
+                "id": "FS-TC-152",
+                "scenarioId": 152,
+                "title": "Test the input field with an empty submission and verify that an appropriate error message is displayed, indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product ID leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Verifies prevention of progression; field-level error text remains unverified.",
+                "automationFile": "FS-TC-152_test-the-input-field-with-an-empty-submission-and-verify-that-an-appropr.spec.ts"
+        },
+        {
+                "id": "FS-TC-318",
+                "scenarioId": 152,
+                "title": "Test the input field with an empty submission and verify that an appropriate error message is displayed, indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product ID leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Verifies prevention of progression; field-level error text remains unverified.",
+                "automationFile": "FS-TC-318_test-the-input-field-with-an-empty-submission-and-verify-that-an-appropr.spec.ts"
+        },
+        {
+                "id": "FS-TC-150",
+                "scenarioId": 150,
+                "title": "Test the input field with special characters that are not allowed in product codes (e.g., `@`, `#`, `Positive Tests: - Copy",
+                "expectedResults": "Disallowed Product ID special characters expose field validation or block progression.",
+                "status": "Automated",
+                "notes": "The inspected form accepts special characters on blur; assertion preserves the AIO expectation.",
+                "automationFile": "FS-TC-150_test-the-input-field-with-special-characters-that-are-not-allowed-in-pro.spec.ts"
+        },
+        {
+                "id": "FS-TC-316",
+                "scenarioId": 150,
+                "title": "Test the input field with special characters that are not allowed in product codes (e.g., `@`, `#`, `Positive Tests: - Copy",
+                "expectedResults": "Disallowed Product ID special characters expose field validation or block progression.",
+                "status": "Automated",
+                "notes": "The inspected form accepts special characters on blur; assertion preserves the AIO expectation.",
+                "automationFile": "FS-TC-316_test-the-input-field-with-special-characters-that-are-not-allowed-in-pro.spec.ts"
+        },
+        {
+                "id": "FS-TC-153",
+                "scenarioId": 153,
+                "title": "Test the input fieldâ€™s behavior when the user rapidly types and deletes characters to ensure that it handles quick input without freezing or crashing. - Copy",
+                "expectedResults": "Rapid typing and deletion leave Product ID responsive and editable.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-153_test-the-input-field-s-behavior-when-the-user-rapidly-types-and-deletes.spec.ts"
+        },
+        {
+                "id": "FS-TC-319",
+                "scenarioId": 153,
+                "title": "Test the input fieldâ€™s behavior when the user rapidly types and deletes characters to ensure that it handles quick input without freezing or crashing. - Copy",
+                "expectedResults": "Rapid typing and deletion leave Product ID responsive and editable.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-319_test-the-input-field-s-behavior-when-the-user-rapidly-types-and-deletes.spec.ts"
+        },
+        {
+                "id": "FS-TC-147",
+                "scenarioId": 147,
+                "title": "Test the Product ID input field with an empty submission and verify that an appropriate error message is displayed, indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product ID leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Prevents progression; the required-field message cannot be verified without attempting to advance.",
+                "automationFile": "FS-TC-147_test-the-product-id-input-field-with-an-empty-submission-and-verify-that.spec.ts"
+        },
+        {
+                "id": "FS-TC-313",
+                "scenarioId": 147,
+                "title": "Test the Product ID input field with an empty submission and verify that an appropriate error message is displayed, indicating that the field is required. - Copy",
+                "expectedResults": "A blank Product ID leaves Save & Continue disabled.",
+                "status": "Partially Automated",
+                "notes": "Prevents progression; the required-field message cannot be verified without attempting to advance.",
+                "automationFile": "FS-TC-313_test-the-product-id-input-field-with-an-empty-submission-and-verify-that.spec.ts"
+        },
+        {
+                "id": "FS-TC-141",
+                "scenarioId": 141,
+                "title": "Test the product name input field's responsiveness by resizing the browser window and ensuring that the input field maintains its functionality and layout. - Copy",
+                "expectedResults": "Product Name, Product ID, and description remain visible, usable, and within a narrow viewport.",
+                "status": "Partially Automated",
+                "notes": "Fields remain visible at 375px, but the inspected layout compresses inputs to about 50px wide; usability threshold needs product confirmation.",
+                "automationFile": "FS-TC-141_test-the-product-name-input-field-s-responsiveness-by-resizing-the-brows.spec.ts"
+        },
+        {
+                "id": "FS-TC-307",
+                "scenarioId": 141,
+                "title": "Test the product name input field's responsiveness by resizing the browser window and ensuring that the input field maintains its functionality and layout. - Copy",
+                "expectedResults": "Product Name, Product ID, and description remain visible, usable, and within a narrow viewport.",
+                "status": "Partially Automated",
+                "notes": "Fields remain visible at 375px, but the inspected layout compresses inputs to about 50px wide; usability threshold needs product confirmation.",
+                "automationFile": "FS-TC-307_test-the-product-name-input-field-s-responsiveness-by-resizing-the-brows.spec.ts"
+        },
+        {
+                "id": "FS-TC-169",
+                "scenarioId": 169,
+                "title": "Test the scenario where the currency dropdown button is clicked multiple times rapidly and verify that it does not cause any errors or unexpected behavior. - Copy",
+                "expectedResults": "Repeated Currency clicks open and close the dropdown without an error.",
+                "status": "Partially Automated",
+                "notes": "AIO expected result says only button behavior should be as expected; test verifies the observable open/closed toggle.",
+                "automationFile": "FS-TC-169_test-the-scenario-where-the-currency-dropdown-button-is-clicked-multiple.spec.ts"
+        },
+        {
+                "id": "FS-TC-335",
+                "scenarioId": 169,
+                "title": "Test the scenario where the currency dropdown button is clicked multiple times rapidly and verify that it does not cause any errors or unexpected behavior. - Copy",
+                "expectedResults": "Repeated Currency clicks open and close the dropdown without an error.",
+                "status": "Partially Automated",
+                "notes": "AIO expected result says only button behavior should be as expected; test verifies the observable open/closed toggle.",
+                "automationFile": "FS-TC-335_test-the-scenario-where-the-currency-dropdown-button-is-clicked-multiple.spec.ts"
+        },
+        {
+                "id": "FS-TC-164",
+                "scenarioId": 164,
+                "title": "Test the target segment button's behavior under different screen sizes and orientations to ensure it remains usable and accessible on mobile devices. - Copy",
+                "expectedResults": "Target Segment remains usable at a mobile viewport.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-330",
+                "scenarioId": 164,
+                "title": "Test the target segment button's behavior under different screen sizes and orientations to ensure it remains usable and accessible on mobile devices. - Copy",
+                "expectedResults": "Target Segment remains usable at a mobile viewport.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-162",
+                "scenarioId": 162,
+                "title": "Test the target segment button's functionality by selecting different options from the dropdown and ensuring the selected option updates correctly. - Copy",
+                "expectedResults": "Selecting a Target Segment updates the selected value.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-328",
+                "scenarioId": 162,
+                "title": "Test the target segment button's functionality by selecting different options from the dropdown and ensuring the selected option updates correctly. - Copy",
+                "expectedResults": "Selecting a Target Segment updates the selected value.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-138",
+                "scenarioId": 138,
+                "title": "Try to submit the form with only whitespace in the product name and confirm that it is rejected. - Copy",
+                "expectedResults": "Whitespace-only Product Name prevents proceeding.",
+                "status": "Partially Automated",
+                "notes": "Save & Continue stays disabled; no field-level message is exposed on blur.",
+                "automationFile": "FS-TC-138_try-to-submit-the-form-with-only-whitespace-in-the-product-name-and-conf.spec.ts"
+        },
+        {
+                "id": "FS-TC-304",
+                "scenarioId": 138,
+                "title": "Try to submit the form with only whitespace in the product name and confirm that it is rejected. - Copy",
+                "expectedResults": "Whitespace-only Product Name prevents proceeding.",
+                "status": "Partially Automated",
+                "notes": "Save & Continue stays disabled; no field-level message is exposed on blur.",
+                "automationFile": "FS-TC-304_try-to-submit-the-form-with-only-whitespace-in-the-product-name-and-conf.spec.ts"
+        },
+        {
+                "id": "FS-TC-156",
+                "scenarioId": 156,
+                "title": "Validate that clicking the button opens the dropdown menu to select a product type. - Copy",
+                "expectedResults": "Product Type dropdown opens and displays its available options.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-156_validate-that-clicking-the-button-opens-the-dropdown-menu-to-select-a-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-322",
+                "scenarioId": 156,
+                "title": "Validate that clicking the button opens the dropdown menu to select a product type. - Copy",
+                "expectedResults": "Product Type dropdown opens and displays its available options.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-322_validate-that-clicking-the-button-opens-the-dropdown-menu-to-select-a-pr.spec.ts"
+        },
+        {
+                "id": "FS-TC-178",
+                "scenarioId": 178,
+                "title": "Validate that the Product Description field text area expands correctly when the user inputs a large amount of text, up to the defined maximum height. - Copy",
+                "expectedResults": "Product Description textarea expands as long text is entered.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-178_validate-that-the-product-description-field-text-area-expands-correctly.spec.ts"
+        },
+        {
+                "id": "FS-TC-344",
+                "scenarioId": 178,
+                "title": "Validate that the Product Description field text area expands correctly when the user inputs a large amount of text, up to the defined maximum height. - Copy",
+                "expectedResults": "Product Description textarea expands as long text is entered.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-344_validate-that-the-product-description-field-text-area-expands-correctly.spec.ts"
+        },
+        {
+                "id": "FS-TC-145",
+                "scenarioId": 145,
+                "title": "Validate that the Product ID input field is focused when the user clicks on the label. - Copy",
+                "expectedResults": "Clicking the Product Code / ID label focuses its input.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-145_validate-that-the-product-id-input-field-is-focused-when-the-user-clicks.spec.ts"
+        },
+        {
+                "id": "FS-TC-311",
+                "scenarioId": 145,
+                "title": "Validate that the Product ID input field is focused when the user clicks on the label. - Copy",
+                "expectedResults": "Clicking the Product Code / ID label focuses its input.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-311_validate-that-the-product-id-input-field-is-focused-when-the-user-clicks.spec.ts"
+        },
+        {
+                "id": "FS-TC-134",
+                "scenarioId": 134,
+                "title": "Validate that the product name input field is focused when the label is clicked. - Copy",
+                "expectedResults": "Clicking the Product Name label focuses its input.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-134_validate-that-the-product-name-input-field-is-focused-when-the-label-is.spec.ts"
+        },
+        {
+                "id": "FS-TC-300",
+                "scenarioId": 134,
+                "title": "Validate that the product name input field is focused when the label is clicked. - Copy",
+                "expectedResults": "Clicking the Product Name label focuses its input.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-300_validate-that-the-product-name-input-field-is-focused-when-the-label-is.spec.ts"
+        },
+        {
+                "id": "FS-TC-179",
+                "scenarioId": 179,
+                "title": "Validate that the user is prevented from entering more characters than the maximum limit (if one exists) and that an error is displayed in Product Description field. - Copy",
+                "expectedResults": "Description is limited to 1,000 characters with the counter updated.",
+                "status": "Automated",
+                "notes": "The inspected input has maxlength=1000 and truncates excess text.",
+                "automationFile": "FS-TC-179_validate-that-the-user-is-prevented-from-entering-more-characters-than-t.spec.ts"
+        },
+        {
+                "id": "FS-TC-345",
+                "scenarioId": 179,
+                "title": "Validate that the user is prevented from entering more characters than the maximum limit (if one exists) and that an error is displayed in Product Description field. - Copy",
+                "expectedResults": "Description is limited to 1,000 characters with the counter updated.",
+                "status": "Automated",
+                "notes": "The inspected input has maxlength=1000 and truncates excess text.",
+                "automationFile": "FS-TC-345_validate-that-the-user-is-prevented-from-entering-more-characters-than-t.spec.ts"
+        },
+        {
+                "id": "FS-TC-151",
+                "scenarioId": 151,
+                "title": "Verify how the system handles a product ID that is a duplicate of an existing product ID (if applicable) and ensure that the user receives a relevant message. - Copy",
+                "expectedResults": "An existing Product ID is rejected with a uniqueness message.",
+                "status": "Blocked",
+                "notes": "Requires a pre-seeded duplicate product and a verified cleanup strategy.",
+                "automationFile": "FS-TC-151_verify-how-the-system-handles-a-product-id-that-is-a-duplicate-of-an-exi.spec.ts"
+        },
+        {
+                "id": "FS-TC-317",
+                "scenarioId": 151,
+                "title": "Verify how the system handles a product ID that is a duplicate of an existing product ID (if applicable) and ensure that the user receives a relevant message. - Copy",
+                "expectedResults": "An existing Product ID is rejected with a uniqueness message.",
+                "status": "Blocked",
+                "notes": "Requires a pre-seeded duplicate product and a verified cleanup strategy.",
+                "automationFile": "FS-TC-317_verify-how-the-system-handles-a-product-id-that-is-a-duplicate-of-an-exi.spec.ts"
+        },
+        {
+                "id": "FS-TC-140",
+                "scenarioId": 140,
+                "title": "Verify how the system handles a product name that is a duplicate of an existing product name (if applicable) and ensure that the user receives a relevant message. - Copy",
+                "expectedResults": "An existing Product Name is rejected with a uniqueness message.",
+                "status": "Blocked",
+                "notes": "Requires a pre-seeded duplicate product and a verified cleanup strategy.",
+                "automationFile": "FS-TC-140_verify-how-the-system-handles-a-product-name-that-is-a-duplicate-of-an-e.spec.ts"
+        },
+        {
+                "id": "FS-TC-306",
+                "scenarioId": 140,
+                "title": "Verify how the system handles a product name that is a duplicate of an existing product name (if applicable) and ensure that the user receives a relevant message. - Copy",
+                "expectedResults": "An existing Product Name is rejected with a uniqueness message.",
+                "status": "Blocked",
+                "notes": "Requires a pre-seeded duplicate product and a verified cleanup strategy.",
+                "automationFile": "FS-TC-306_verify-how-the-system-handles-a-product-name-that-is-a-duplicate-of-an-e.spec.ts"
+        },
+        {
+                "id": "FS-TC-154",
+                "scenarioId": 154,
+                "title": "Verify that the label \"Product Type\" is displayed correctly and is associated with the button. - Copy",
+                "expectedResults": "The Product Type label is visible.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-154_verify-that-the-label-product-type-is-displayed-correctly-and-is-associa.spec.ts"
+        },
+        {
+                "id": "FS-TC-320",
+                "scenarioId": 154,
+                "title": "Verify that the label \"Product Type\" is displayed correctly and is associated with the button. - Copy",
+                "expectedResults": "The Product Type label is visible.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-320_verify-that-the-label-product-type-is-displayed-correctly-and-is-associa.spec.ts"
+        },
+        {
+                "id": "FS-TC-160",
+                "scenarioId": 160,
+                "title": "Verify that the label \"Target Segment\" is clearly visible and correctly associated with the button, ensuring users can understand the purpose of the button. - Copy",
+                "expectedResults": "The Target Segment label is visible.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-326",
+                "scenarioId": 160,
+                "title": "Verify that the label \"Target Segment\" is clearly visible and correctly associated with the button, ensuring users can understand the purpose of the button. - Copy",
+                "expectedResults": "The Target Segment label is visible.",
+                "status": "Retired",
+                "notes": "PO decision 16-Oct-2026: Target Segment was removed from General Information by design. Case retired; spec removed.",
+                "automationFile": ""
+        },
+        {
+                "id": "FS-TC-142",
+                "scenarioId": 142,
+                "title": "Verify that the Product ID input field accepts valid product codes such as \"MF001\" and \"GL001\" without any errors. - Copy",
+                "expectedResults": "Product IDs MF001 and GL001 are accepted without an invalid state.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-142_verify-that-the-product-id-input-field-accepts-valid-product-codes-such.spec.ts"
+        },
+        {
+                "id": "FS-TC-308",
+                "scenarioId": 142,
+                "title": "Verify that the Product ID input field accepts valid product codes such as \"MF001\" and \"GL001\" without any errors. - Copy",
+                "expectedResults": "Product IDs MF001 and GL001 are accepted without an invalid state.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-308_verify-that-the-product-id-input-field-accepts-valid-product-codes-such.spec.ts"
+        },
+        {
+                "id": "FS-TC-131",
+                "scenarioId": 131,
+                "title": "Verify that the product name input field accepts valid product names, such as \"Micro Business Loan\" or \"Group Lending Product\". - Copy",
+                "expectedResults": "A valid product name remains in the Product Name field without an invalid state.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-131_verify-that-the-product-name-input-field-accepts-valid-product-names-suc.spec.ts"
+        },
+        {
+                "id": "FS-TC-297",
+                "scenarioId": 131,
+                "title": "Verify that the product name input field accepts valid product names, such as \"Micro Business Loan\" or \"Group Lending Product\". - Copy",
+                "expectedResults": "A valid product name remains in the Product Name field without an invalid state.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-297_verify-that-the-product-name-input-field-accepts-valid-product-names-suc.spec.ts"
+        },
+        {
+                "id": "FS-TC-171",
+                "scenarioId": 171,
+                "title": "Verify that the Status button displays the correct initial status (\"Active\") when the page loads. - Copy",
+                "expectedResults": "Status defaults to Active.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-171_verify-that-the-status-button-displays-the-correct-initial-status-active.spec.ts"
+        },
+        {
+                "id": "FS-TC-337",
+                "scenarioId": 171,
+                "title": "Verify that the Status button displays the correct initial status (\"Active\") when the page loads. - Copy",
+                "expectedResults": "Status defaults to Active.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-337_verify-that-the-status-button-displays-the-correct-initial-status-active.spec.ts"
+        },
+        {
+                "id": "FS-TC-173",
+                "scenarioId": 173,
+                "title": "Verify that the Status button retains the selected status after a page refresh. - Copy",
+                "expectedResults": "Selected Status is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-173_verify-that-the-status-button-retains-the-selected-status-after-a-page-r.spec.ts"
+        },
+        {
+                "id": "FS-TC-339",
+                "scenarioId": 173,
+                "title": "Verify that the Status button retains the selected status after a page refresh. - Copy",
+                "expectedResults": "Selected Status is retained after refresh, if required.",
+                "status": "Blocked",
+                "notes": "AIO makes persistence conditional; no saved-draft setup or cleanup contract is documented.",
+                "automationFile": "FS-TC-339_verify-that-the-status-button-retains-the-selected-status-after-a-page-r.spec.ts"
+        },
+        {
+                "id": "FS-TC-175",
+                "scenarioId": 175,
+                "title": "Verify that the user can enter a detailed product description in the Product Description field text area without any issues. - Copy",
+                "expectedResults": "A valid description remains in the Product Description field.",
+                "status": "Partially Automated",
+                "notes": "AIO also says saved successfully; the test does not persist a product because no safe draft cleanup exists.",
+                "automationFile": "FS-TC-175_verify-that-the-user-can-enter-a-detailed-product-description-in-the-pro.spec.ts"
+        },
+        {
+                "id": "FS-TC-341",
+                "scenarioId": 175,
+                "title": "Verify that the user can enter a detailed product description in the Product Description field text area without any issues. - Copy",
+                "expectedResults": "A valid description remains in the Product Description field.",
+                "status": "Partially Automated",
+                "notes": "AIO also says saved successfully; the test does not persist a product because no safe draft cleanup exists.",
+                "automationFile": "FS-TC-341_verify-that-the-user-can-enter-a-detailed-product-description-in-the-pro.spec.ts"
+        },
+        {
+                "id": "FS-TC-165",
+                "scenarioId": 165,
+                "title": "Verify that the user can successfully select \"EGP  Egyptian Pound\" from the Currency dropdown. - Copy",
+                "expectedResults": "EGP - Egyptian Pound can be selected in Currency.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-165_verify-that-the-user-can-successfully-select-egp-egyptian-pound-from-the.spec.ts"
+        },
+        {
+                "id": "FS-TC-331",
+                "scenarioId": 165,
+                "title": "Verify that the user can successfully select \"EGP  Egyptian Pound\" from the Currency dropdown. - Copy",
+                "expectedResults": "EGP - Egyptian Pound can be selected in Currency.",
+                "status": "Automated",
+                "notes": "",
+                "automationFile": "FS-TC-331_verify-that-the-user-can-successfully-select-egp-egyptian-pound-from-the.spec.ts"
+        }
+]

@@ -1,0 +1,19 @@
+/**
+ * FLOW-LPC-ADD-007 | Step 1 dropdowns contain the observed reference values
+ * Excel: test-cases/Flowsky_Loan_Product_Configuration_Jira_TestCases.xlsx -> sheet 'Add Loan Product Config'
+ * Workflow step: Step 01 - General Information
+ * Requirement: LPC-REQ-003 | Priority: Low | Technique: Equivalence partitioning | Automation: Automated
+ * Locators derived from the 16-Oct-2026 staging recording - verify on first run.
+ */
+import { test, expect } from '../../../../../fixtures';
+
+test.describe('FLOW-LPC-ADD-007', () => {
+  test('FLOW-LPC-ADD-007 Step 1 dropdowns contain the observed reference values @add @step-01 @low', async ({ page, wizard, steps }) => {
+    await wizard.gotoAdd();
+    expect(await steps.general.options('Product Type')).toContain('Business Loan');
+    expect(await steps.general.options('Currency')).toContain('EGP - Egyptian Pound');
+    expect(await steps.general.options('Status')).toContain('Active');
+    expect(await steps.general.options('Fiscal Year')).toContain('360 days');
+    await expect(page.getByText('Day-count basis used in rate and late-fee calculations')).toBeVisible();
+  });
+});
